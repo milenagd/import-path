@@ -4,15 +4,17 @@ This project has the goal of changing the relative import path when import path 
 
 Example:
 
-You have a directory with the following structure
+You have a directory with the following structure:
 
-Directory
-y.js
-/a
-/b
-/c
-/d
-x.js
+```
+example
+├── a
+│   └── b
+│       └── c
+│           └── d
+│               └── x.js
+└── y.js
+```
 
 ```js
 // file x.js
