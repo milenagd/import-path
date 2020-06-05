@@ -15,9 +15,7 @@ export const readFilesByDir = (directoryPath, root) => {
       const fullPath = path.resolve(directoryPath, file);
       const stats = fs.statSync(fullPath);
       if (!stats.isDirectory()) {
-        if (file === "x.js") {
-          editFile(fullPath, root);
-        }
+        editFile(fullPath, root);
       } else {
         readFilesByDir(fullPath, root);
       }

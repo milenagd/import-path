@@ -17,7 +17,7 @@ export const editFile = (fileName, root) => {
           root,
           lineObj.path,
           fileName
-        )}'`;
+        )}';`;
       })
       .join("\n");
 

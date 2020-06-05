@@ -7,5 +7,5 @@ export const transformPath = (root, relativePath, filePath) => {
     splittedPath.length > 3
       ? parseFinalPath(filePath, root, removeQuotes(relativePath))
       : removeQuotes(relativePath);
-  return finalPath;
+  return finalPath.replace(";", "");
 };
